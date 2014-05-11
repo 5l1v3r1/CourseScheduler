@@ -27,6 +27,7 @@ students = [
 
 teachers = [
   new Teacher('Hanson', [courses[0], courses[1]])
+  new Teacher('Darling', [courses[2]])
   new Teacher('Plunkett', [courses[3]])
   new Teacher('Doc', [courses[4], courses[5], courses[6], courses[7]])
   new Teacher('Mr. V', [courses[8]])
@@ -35,5 +36,11 @@ teachers = [
 ]
 
 ctx = new Context students, teachers, courses
+count = 0
 ctx.generateSolutions ->
-  console.log 'got solution'
+  if not (count % 100)
+    console.log 'got solutions ' + count
+  count++
+  return true
+
+console.log 'solution count is ' + count

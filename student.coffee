@@ -12,6 +12,8 @@ class Student
     for course in @courses
       return false if not @isInCourse course
     return true
+  
+  toString: -> "<Student name=#{@name} sections=#{@sections}>"
 
 if module?
   module.exports = Student

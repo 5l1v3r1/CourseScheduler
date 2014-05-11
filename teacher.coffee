@@ -7,6 +7,8 @@ class Teacher
     for x in @sections
       count++ if x?
     return count >= @maxSect
+  
+  toString: -> @name
 
 if module?
   module.exports = Teacher
