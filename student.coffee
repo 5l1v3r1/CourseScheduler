@@ -13,5 +13,5 @@ class Student
       return false if not @isInCourse course
     return true
 
-if module.exports?
+if module?
   module.exports = Student

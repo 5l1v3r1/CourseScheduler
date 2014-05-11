@@ -8,5 +8,5 @@ class Teacher
       count++ if x?
     return count >= @maxSect
 
-if module.exports?
+if module?
   module.exports = Teacher

@@ -11,5 +11,5 @@ class Section
     idx = @students.indexOf student
     @students.splice idx, 1 if idx >= 0
 
-if module.exports?
+if module?
   module.exports = Section
